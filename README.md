@@ -16,28 +16,19 @@
 
 ## Challenges Encountered and Overcome
 
-### When analyzing the data, the individual ride ID's are itemized, but the driver ID's are not, with just the total drivers listed.  In order to accurately determine the driver count, I had to total the drivers by unique cities.
+### When analyzing the data, the individual ride ID's are itemized, but the driver ID's are not, with just the total drivers listed.  If driver ID's were listed, it would have been easier to determine how many drivers gave rides in each city type without the need for further manipulation.  In order to accurately determine the driver count, I had to total the drivers by unique cities.
 
-#Total Drivers for each city type
-
-unique_cities = pyber_data_df.drop_duplicates(["city"])
-
-c_tot_drivers = unique_cities.groupby(["type"]).sum()["driver_count"]
-
-### Technical Analyses Used
+[Data Analysis Code Link](https://github.com/mydogmandy/PyBer_Analysis/blob/master/PyBer_Challenge.ipynb)
 
 ## Recommendations and Next Steps
 
-### Recommendations for Future Analysis
+### Based on the data from the different city types, PyBer should invest in attracting more drivers for Suburban routes, as that sector has seen recent growth in total fares, where the Urban and Rural routes have seen recent declines in revenue generated.
+### While rural drivers produced a small increase in average fares per ride, it may be easier to increase the drivers in the Rural market, as the average fare per driver is much greater that in Suburban or Urban areas.  
+### A recommendation would be to continue tracking for a complete year to see if the city types react differently during certain times of the year.
 
-### Additional Analysis 1
+## Further Recommended Analysis:
 
-* Description of Approach
+- If ride length and distance are added to the data along with driver ID's, we can determine how much time the average ride takes and the average distance traveled.
+- Since there is a timestamp included with the dates, it would be valuable to run another analysis for each city type to gain insight when more or less drivers need to be available.
 
-* Technical Steps
-
-### Additional Analysis 2
-
-* Description of Approach
-
-* Technical Steps
+### If a dataset containing driver ID's associated with Ride ID's exists, it can be merged into the new dataset created to include the ID visibility.

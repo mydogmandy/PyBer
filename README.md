@@ -3,7 +3,7 @@
 ## Background and Results
 
 ### This project represents an analysis of Pyber ridesharing in three popluation types to determine under-represented city types.
-### Total rides were divided into city, suburban, and rural types, with average revenue per driver and ride compared, with total fare by type tracked from January 21 to April 28 in 2019:
+### Total rides were divided into city, suburban, and rural types, with average revenue per driver and ride compared.  The total fare by type tracked from January 21 to April 28 in 2019:
 
 ![Summary DataFrame](https://github.com/mydogmandy/PyBer_Analysis/blob/master/analysis/summary_DataFrame.png)
 
